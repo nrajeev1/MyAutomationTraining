@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-21T23:08:50 IST" name="Default suite" finished-at="2021-12-21T23:09:24 IST" duration-ms="34350">
+    <groups>
+    </groups>
+    <test started-at="2021-12-21T23:08:50 IST" name="Default test" finished-at="2021-12-21T23:09:24 IST" duration-ms="34350">
+      <class name="packagee_demo.addtocarttoadded">
+        <test-method is-config="true" signature="setup()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:08:50 IST" name="setup" finished-at="2021-12-21T23:09:01 IST" duration-ms="10944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Beetroot()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:09:01 IST" name="Beetroot" finished-at="2021-12-21T23:09:04 IST" duration-ms="3048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beetroot -->
+        <test-method signature="Brocolli()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:09:04 IST" name="Brocolli" finished-at="2021-12-21T23:09:06 IST" duration-ms="2177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Brocolli -->
+        <test-method signature="Cauliflower()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:09:06 IST" name="Cauliflower" finished-at="2021-12-21T23:09:08 IST" duration-ms="2167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cauliflower -->
+        <test-method signature="Cucumber()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:09:08 IST" name="Cucumber" finished-at="2021-12-21T23:09:11 IST" duration-ms="2154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cucumber -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:packagee_demo.addtocarttoadded@6973b51b]" started-at="2021-12-21T23:09:11 IST" name="finish" finished-at="2021-12-21T23:09:24 IST" duration-ms="13822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- packagee_demo.addtocarttoadded -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [My_Run_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestingOnChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="packagee_demo.windows_auth">
+        <methods>
+          <include name="setup"/>
+          <include name="finish"/>
+          <include name="greenkart"/>
+        </methods>
+      </class> <!-- packagee_demo.windows_auth -->
+    </classes>
+  </test> <!-- TestingOnChrome(failed) -->
+</suite> <!-- Failed suite [My_Run_Suite] -->
