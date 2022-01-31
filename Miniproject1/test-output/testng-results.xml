@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="31" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-31T21:37:55 IST" name="Suite1" finished-at="2022-01-31T21:40:34 IST" duration-ms="159210">
+    <groups>
+    </groups>
+    <test started-at="2022-01-31T21:37:55 IST" name="TestingOnFirefox" finished-at="2022-01-31T21:40:26 IST" duration-ms="151166">
+      <class name="Demo.Pegaloginpage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:37:55 IST" name="setup" finished-at="2022-01-31T21:38:28 IST" duration-ms="33592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="launch_app()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:38:28 IST" name="launch_app" finished-at="2022-01-31T21:38:43 IST" duration-ms="15134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_app -->
+        <test-method signature="enter_user()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:38:43 IST" name="enter_user" finished-at="2022-01-31T21:38:44 IST" depends-on-methods="Demo.Pegaloginpage.launch_app" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_user -->
+        <test-method signature="enter_pswd()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:38:44 IST" name="enter_pswd" finished-at="2022-01-31T21:38:45 IST" depends-on-methods="Demo.Pegaloginpage.enter_user" duration-ms="879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_pswd -->
+        <test-method signature="clicklogin()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:38:45 IST" name="clicklogin" finished-at="2022-01-31T21:39:29 IST" depends-on-methods="Demo.Pegaloginpage.enter_pswd" duration-ms="44270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method signature="get_title()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:39:29 IST" name="get_title" finished-at="2022-01-31T21:39:29 IST" depends-on-methods="Demo.Pegaloginpage.clicklogin" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method signature="Create_individuallead()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:39:29 IST" name="Create_individuallead" finished-at="2022-01-31T21:39:32 IST" depends-on-methods="Demo.Pegaloginpage.get_title" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_individuallead -->
+        <test-method signature="newindividualleadmodal()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:39:32 IST" name="newindividualleadmodal" finished-at="2022-01-31T21:39:52 IST" depends-on-methods="Demo.Pegaloginpage.Create_individuallead" duration-ms="20124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newindividualleadmodal -->
+        <test-method signature="editindividuallead()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:39:52 IST" name="editindividuallead" finished-at="2022-01-31T21:40:01 IST" depends-on-methods="Demo.Pegaloginpage.newindividualleadmodal" duration-ms="8732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editindividuallead -->
+        <test-method signature="updateindividuallead()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:40:01 IST" name="updateindividuallead" finished-at="2022-01-31T21:40:11 IST" depends-on-methods="Demo.Pegaloginpage.editindividuallead" duration-ms="10042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateindividuallead -->
+        <test-method signature="convertlead()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:40:11 IST" name="convertlead" finished-at="2022-01-31T21:40:11 IST" depends-on-methods="Demo.Pegaloginpage.updateindividuallead" duration-ms="522" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="Simple pzhc pzbutton" name="CaseActionHeader_pyWorkPage_5" type="button"> is not clickable at point (360,108) because another element <div class=" flex content layout-content-inline_grid_double  content-inline_grid_double  content-stacked"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'IQZNGLDT015', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4544, moz:profile: C:\Users\rajeev.n.IQZAD\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4cf74279-263d-49a4-b416-290017132f70]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="Simple pzhc pzbutton" name="CaseActionHeader_pyWorkPage_5" type="button"> is not clickable at point (360,108) because another element <div class=" flex content layout-content-inline_grid_double  content-inline_grid_double  content-stacked"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'IQZNGLDT015', ip: '192.168.0.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 96.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220126154723, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 4544, moz:profile: C:\Users\rajeev.n.IQZAD\App..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4cf74279-263d-49a4-b416-290017132f70
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at Demo.Pegaloginpage.convertlead(Pegaloginpage.java:135)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertlead -->
+        <test-method signature="convertleadmodal()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:40:11 IST" name="convertleadmodal" finished-at="2022-01-31T21:40:11 IST" depends-on-methods="Demo.Pegaloginpage.convertlead" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Pegaloginpage.convertleadmodal()[pri:0, instance:Demo.Pegaloginpage@1189dd52] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Pegaloginpage.convertleadmodal()[pri:0, instance:Demo.Pegaloginpage@1189dd52] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertleadmodal -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:Demo.Pegaloginpage@1189dd52]" started-at="2022-01-31T21:40:11 IST" name="finish" finished-at="2022-01-31T21:40:26 IST" duration-ms="14480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- Demo.Pegaloginpage -->
+    </test> <!-- TestingOnFirefox -->
+    <test started-at="2022-01-31T21:37:55 IST" name="TestingOnEdge" finished-at="2022-01-31T21:40:33 IST" duration-ms="158517">
+      <class name="Demo.Pegaloginpage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:37:55 IST" name="setup" finished-at="2022-01-31T21:38:04 IST" duration-ms="9547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="launch_app()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:04 IST" name="launch_app" finished-at="2022-01-31T21:38:13 IST" duration-ms="8491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_app -->
+        <test-method signature="enter_user()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:13 IST" name="enter_user" finished-at="2022-01-31T21:38:13 IST" depends-on-methods="Demo.Pegaloginpage.launch_app" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_user -->
+        <test-method signature="enter_pswd()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:13 IST" name="enter_pswd" finished-at="2022-01-31T21:38:13 IST" depends-on-methods="Demo.Pegaloginpage.enter_user" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_pswd -->
+        <test-method signature="clicklogin()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:13 IST" name="clicklogin" finished-at="2022-01-31T21:38:47 IST" depends-on-methods="Demo.Pegaloginpage.enter_pswd" duration-ms="33226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method signature="get_title()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:47 IST" name="get_title" finished-at="2022-01-31T21:38:47 IST" depends-on-methods="Demo.Pegaloginpage.clicklogin" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method signature="Create_individuallead()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:47 IST" name="Create_individuallead" finished-at="2022-01-31T21:38:48 IST" depends-on-methods="Demo.Pegaloginpage.get_title" duration-ms="1412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_individuallead -->
+        <test-method signature="newindividualleadmodal()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:38:48 IST" name="newindividualleadmodal" finished-at="2022-01-31T21:39:00 IST" depends-on-methods="Demo.Pegaloginpage.Create_individuallead" duration-ms="11689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newindividualleadmodal -->
+        <test-method signature="editindividuallead()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:39:00 IST" name="editindividuallead" finished-at="2022-01-31T21:39:11 IST" depends-on-methods="Demo.Pegaloginpage.newindividualleadmodal" duration-ms="11385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editindividuallead -->
+        <test-method signature="updateindividuallead()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:39:11 IST" name="updateindividuallead" finished-at="2022-01-31T21:39:28 IST" depends-on-methods="Demo.Pegaloginpage.editindividuallead" duration-ms="16590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateindividuallead -->
+        <test-method signature="convertlead()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:39:28 IST" name="convertlead" finished-at="2022-01-31T21:39:34 IST" depends-on-methods="Demo.Pegaloginpage.updateindividuallead" duration-ms="6562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertlead -->
+        <test-method signature="convertleadmodal()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:39:34 IST" name="convertleadmodal" finished-at="2022-01-31T21:39:47 IST" depends-on-methods="Demo.Pegaloginpage.convertlead" duration-ms="12500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertleadmodal -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:Demo.Pegaloginpage@3febb011]" started-at="2022-01-31T21:39:47 IST" name="finish" finished-at="2022-01-31T21:40:33 IST" duration-ms="46356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- Demo.Pegaloginpage -->
+    </test> <!-- TestingOnEdge -->
+    <test started-at="2022-01-31T21:37:55 IST" name="TestingOnChrome" finished-at="2022-01-31T21:40:34 IST" duration-ms="159210">
+      <class name="Demo.Pegaloginpage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:37:55 IST" name="setup" finished-at="2022-01-31T21:38:12 IST" duration-ms="17434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="launch_app()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:12 IST" name="launch_app" finished-at="2022-01-31T21:38:16 IST" duration-ms="3756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_app -->
+        <test-method signature="enter_user()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:16 IST" name="enter_user" finished-at="2022-01-31T21:38:17 IST" depends-on-methods="Demo.Pegaloginpage.launch_app" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_user -->
+        <test-method signature="enter_pswd()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:17 IST" name="enter_pswd" finished-at="2022-01-31T21:38:17 IST" depends-on-methods="Demo.Pegaloginpage.enter_user" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_pswd -->
+        <test-method signature="clicklogin()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:17 IST" name="clicklogin" finished-at="2022-01-31T21:38:48 IST" depends-on-methods="Demo.Pegaloginpage.enter_pswd" duration-ms="31096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clicklogin -->
+        <test-method signature="get_title()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:48 IST" name="get_title" finished-at="2022-01-31T21:38:48 IST" depends-on-methods="Demo.Pegaloginpage.clicklogin" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method signature="Create_individuallead()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:48 IST" name="Create_individuallead" finished-at="2022-01-31T21:38:50 IST" depends-on-methods="Demo.Pegaloginpage.get_title" duration-ms="1224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Create_individuallead -->
+        <test-method signature="newindividualleadmodal()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:50 IST" name="newindividualleadmodal" finished-at="2022-01-31T21:38:55 IST" depends-on-methods="Demo.Pegaloginpage.Create_individuallead" duration-ms="5624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newindividualleadmodal -->
+        <test-method signature="editindividuallead()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:38:55 IST" name="editindividuallead" finished-at="2022-01-31T21:39:03 IST" depends-on-methods="Demo.Pegaloginpage.newindividualleadmodal" duration-ms="8165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editindividuallead -->
+        <test-method signature="updateindividuallead()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:39:03 IST" name="updateindividuallead" finished-at="2022-01-31T21:39:08 IST" depends-on-methods="Demo.Pegaloginpage.editindividuallead" duration-ms="4240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateindividuallead -->
+        <test-method signature="convertlead()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:39:08 IST" name="convertlead" finished-at="2022-01-31T21:39:13 IST" depends-on-methods="Demo.Pegaloginpage.updateindividuallead" duration-ms="4879" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertlead -->
+        <test-method signature="convertleadmodal()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:39:13 IST" name="convertleadmodal" finished-at="2022-01-31T21:39:33 IST" depends-on-methods="Demo.Pegaloginpage.convertlead" duration-ms="20071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertleadmodal -->
+        <test-method is-config="true" signature="finish()[pri:0, instance:Demo.Pegaloginpage@6e171cd7]" started-at="2022-01-31T21:39:33 IST" name="finish" finished-at="2022-01-31T21:40:34 IST" duration-ms="61173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finish -->
+      </class> <!-- Demo.Pegaloginpage -->
+    </test> <!-- TestingOnChrome -->
+  </suite> <!-- Suite1 -->
+</testng-results>
